@@ -2,6 +2,7 @@ var express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
     , mongojs = require('mongojs')
+    , bird = require('./birdsModel.js');
     , port = 8000
     , db = mongojs('birds')
     , sighting = db.collection('sighting');
